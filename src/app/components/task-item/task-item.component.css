@@ -2,7 +2,6 @@
   background-color: #f4f4f4;
   margin: 5px;
   padding: 10px 20px;
-  cursor: pointer;
 }
 
 .task.reminder {
@@ -13,4 +12,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.task fa-icon {
+  color: red;
+  cursor: pointer;
 }
