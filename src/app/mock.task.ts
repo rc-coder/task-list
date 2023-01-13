@@ -10,19 +10,19 @@ export const taskList: Task[] = [
   },
   {
     id: 2,
-    text: 'Terminar el primer Modulo de angular',
+    text: 'Terminar el segundo Modulo de angular',
     day: 'Agosto 5 a las 12',
     reminder: true,
   },
   {
     id: 3,
-    text: 'Terminar el primer Modulo de angular',
+    text: 'Terminar el tercer Modulo de angular',
     day: 'Agosto 5 a las 12',
     reminder: false,
   },
   {
     id: 4,
-    text: 'Terminar el primer Modulo de angular',
+    text: 'Terminar el cuarto Modulo de angular',
     day: 'Agosto 5 a las 12',
     reminder: false,
   },
