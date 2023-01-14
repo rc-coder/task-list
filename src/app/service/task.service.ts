@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHandler } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 // Nos permiten hacer llamadas a apis, es necesario importar el modulo en app.module para poder usar estos metodos
 import { taskList } from '../mock.task';
 import { Task } from '../Task';
 import { Observable, of } from 'rxjs';
+
+const httpOptions = {
+  //Aqui le informamos al backend que le estamos enviando un json con el put
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+};
 
 @Injectable({
   providedIn: 'root',
@@ -15,5 +20,15 @@ export class TaskService {
 
   getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>(this.apiUrl);
+  }
+
+  deleteTask(task: Task): Observable<Task> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.delete<Task>(url);
+  }
+
+  updateTaskReminder(task: Task): Observable<Task> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.put<Task>(url, task, httpOptions);
   }
 }
