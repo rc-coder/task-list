@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Terminar el primer Modulo de angular",
+      "day": "Agosto 5 a las 12",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Terminar el segundo Modulo de angular",
+      "day": "Agosto 5 a las 12",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Terminar el tercer Modulo de angular",
+      "day": "Agosto 5 a las 12",
+      "reminder": false
+    },
+    {
+      "id": 4,
+      "text": "Terminar el cuarto Modulo de angular",
+      "day": "Agosto 5 a las 12",
+      "reminder": false
+    },
+    {
+      "id": 5,
+      "text": "Terminar el quinto Modulo de angular",
+      "day": "Agosto 5 a las 12",
+      "reminder": false
+    }
+  ]
+}
