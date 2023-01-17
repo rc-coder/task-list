@@ -1,3 +1,4 @@
+<app-add-task (onAddTask)="addTask($event)"></app-add-task>
 <!-- Se va a crear un tag task-item por cada task de la lista y se le pasa el task como parametro, esto se logra con el input -->
 <app-task-item
   *ngFor="let task of tasks"

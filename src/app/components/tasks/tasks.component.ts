@@ -35,6 +35,13 @@ export class TasksComponent {
     task.reminder = !task.reminder;
     //Aqui si se actualiza la base de datos
     //El servicio se encarga de comunicarse con la base de datos y la logica se maneja aqui en el componente
+    //Esto es como el useDispatch de Redux. los service serian como los features
     this.taskService.updateTaskReminder(task).subscribe();
+  }
+
+  addTask(task: Task) {
+    this.taskService.addTask(task).subscribe((task) => {
+      this.tasks.push(task);
+    });
   }
 }
